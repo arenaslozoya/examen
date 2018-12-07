@@ -1,0 +1,30 @@
+<!--
+  Generated template for the RegistroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style = "background-color:#E3976B">
+    <ion-item>
+        <ion-input [(ngModel)]="nombre" placeholder="Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input [(ngModel)]="tel" placeholder="Teléfono"></ion-input>
+        </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="correo" placeholder="Correo o usuario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="contra" placeholder="Contraseña"></ion-input>
+  </ion-item>
+  <button ion-button block (click)= "clickRegistro()" style = "background-color: #A998D1">Regristrarse</button>
+</ion-content>

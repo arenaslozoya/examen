@@ -1,14 +1,42 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Inicio de Sesión 
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding style = "background-color:#E3976B">
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Correo</ion-label>
+      <ion-input type="text" value= "" [(ngModel)]= "correo" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password" value= "" [(ngModel)]= "contra" ></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-row>
+    <ion-col>
+      <button ion-button block (click)="clickMensaje()" style = "background-color: #A998D1">Iniciar sesión</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button block (click)="clickRegistro()" style = "background-color: #A998D1">Registrarse</button>
+    </ion-col>
+  </ion-row>
+  <ion-list>
+    <ion-item *ngFor="let u of usuarios">
+      <ion-card>
+        {{u.correo}}
+        {{u.contra}}
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+
+  
+
+
+
 </ion-content>
