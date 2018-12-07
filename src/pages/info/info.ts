@@ -16,19 +16,17 @@ import { CarritoPage } from '../carrito/carrito';
 })
 export class InfoPage {
 producto;
-reviews;
-carrito = CarritoPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.producto = this.navParams.get('producto');
-    this.reviews = this.navParams.get('reviews');
+ 
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InfoPage');
   }
-  clickCarrito(p)
+  clickAgregarCarrito()
   {
-  this.navCtrl.push(this.carrito,{carrito:p});
+
   }
 }

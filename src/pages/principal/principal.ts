@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { InfoPage } from '../info/info';
+import { CarritoPage } from '../carrito/carrito';
 
 @Component({
   selector: 'page-principal',
@@ -8,6 +9,7 @@ import { InfoPage } from '../info/info';
 })
 export class PrincipalPage {
 info = InfoPage;
+carrito = CarritoPage;
 productos = [
    {
     nombre: "La razón de estar contigo",
@@ -16,13 +18,13 @@ productos = [
     vendedor: {
     nombre: "Milla Ramos de Hoyos",
     valoracion: [1, 2, 3, 4 , 5]},
-    reviews: [
+    reviews: 
     {
     username: "Jose L. Nieto",
     avatar: "../assets/carita.jpg",
     fecha: "2018-11-27",
     review: "Después de leer la razón de estar contigo, nunca verás a tu perro de la misma forma"
-    }],
+    },
     fecha: "2018-10-2",
     disponibles: 55
    },
@@ -34,14 +36,13 @@ productos = [
     vendedor: {
     nombre: "Jenny Stuart",
     valoracion: [1, 2, 3]},
-    reviews: [
+    reviews: 
     {
     username: "Sofia Torres",
     avatar: "../assets/carita.jpg",
     fecha: "2018-10-7",
     review: "Las aventuras no tienen nada de interesante, ninguno de los personajes está bien desarrollado "
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 104
    },
@@ -52,14 +53,13 @@ productos = [
     vendedor: {
     nombre: "Barbara",
     valoracion: [1, 2, 3,4,5]},
-    reviews: [
+    reviews: 
     {
     username: "KEAL",
     avatar: "../assets/carita.jpg",
     fecha: "2018-5-13",
     review: "Un libro esperanzador, el cual brinda un mensaje muy importante, el alma vive por siempre, compartiendo su luz  "
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 80
    },
@@ -70,14 +70,13 @@ productos = [
     vendedor: {
     nombre: "Juan Eslava",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Pedro Rosas",
     avatar: "../assets/carita.jpg",
     fecha: "2018-5-23",
     review: "Que buen libro, estoy esperando la secuela"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 39
    },
@@ -88,14 +87,13 @@ productos = [
     vendedor: {
     nombre: "Angeles Gonzalez",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews: 
     {
     username: "Rene Gómez",
     avatar: "../assets/carita.jpg",
     fecha: "2018-6-1",
     review: "Me pareció apasionante. Leí también el siguiente libro, muy interesante. "
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 199
    },
@@ -106,14 +104,13 @@ productos = [
     vendedor: {
     nombre: "Olivia Sánchez",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Nicolas A.",
     avatar: "../assets/carita.jpg",
     fecha: "2018-10-20",
     review: "Me gustó mucho, el crimen que pone todo en marcha no es un asesinato. Me encanto "
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 789
    },
@@ -124,14 +121,13 @@ productos = [
     vendedor: {
     nombre: "Juan Javier González",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews: 
     {
     username: "R. Vincent",
     avatar: "../assets/carita.jpg",
     fecha: "2018-4-9",
     review: "El mejor libro, el mejor regalo que he comprado"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 687
    },
@@ -142,14 +138,13 @@ productos = [
     vendedor: {
     nombre: "B. Silvia",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews: 
     {
     username: "Cheryl Stout",
     avatar: "../assets/carita.jpg",
     fecha: "2018-4-9",
     review: "Is a variety of horror, sci-fi and murder-mystery…plus one poem. I love it!"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 67
    },
@@ -160,14 +155,13 @@ productos = [
     vendedor: {
     nombre: "Jesus Armando",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Miguel Mendez",
     avatar: "../assets/carita.jpg",
     fecha: "2018-4-2",
     review: "This is the greatest book series that has ever been written."
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 24
    },
@@ -178,14 +172,13 @@ productos = [
     vendedor: {
     nombre: "Israel León",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Senta McAdoo",
     avatar: "../assets/carita.jpg",
     fecha: "2018-3-6",
     review: "My son couldn´t put them down and he is 9 years old."
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 94
    },
@@ -196,14 +189,13 @@ productos = [
     vendedor: {
     nombre: "José Gabriel García",
     valoracion: [1, 2, 3]},
-    reviews: [
+    reviews:
     {
     username: "Mary Jo",
     avatar: "../assets/carita.jpg",
     fecha: "2018-11-16",
     review: "Sin duda uno de los mejores libros que podrás leer, muy recomendado y llego en excelentes condiciones."
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 297
    },
@@ -214,14 +206,13 @@ productos = [
     vendedor: {
     nombre: "Gabriel Alejandro",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Victor León",
     avatar: "../assets/carita.jpg",
     fecha: "2018-10-6",
     review: "Excelente boxset, sinceramente amo la saga."
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 227
    },
@@ -232,14 +223,13 @@ productos = [
     vendedor: {
     nombre: "Shior Salazar",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews:
     {
     username: "Marco Mejia",
     avatar: "../assets/carita.jpg",
     fecha: "2018-1-16",
     review: "Muy interesante como presenta la trama y rompen esquemas que la religión ha marcado."
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 83
    },
@@ -250,14 +240,13 @@ productos = [
     vendedor: {
     nombre: "Samash Urias",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews: 
     {
     username: "Rodolfo Ismael",
     avatar: "../assets/carita.jpg",
     fecha: "2018-8-5",
     review: "El libro llegó en muy buenas condiciones, indudable su contenido es interesante y seguramente lo aprovecharé"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 30
    },
@@ -268,14 +257,13 @@ productos = [
     vendedor: {
     nombre: "José Luis Naranjo",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Marcela Hernández",
     avatar: "../assets/carita.jpg",
     fecha: "2018-7-5",
     review: "Excelente libro, todo un clásico que me encanta tenga la edad que tenga"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 304
    },
@@ -286,14 +274,13 @@ productos = [
     vendedor: {
     nombre: "Rosa Ahide",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews: 
     {
     username: "Eduardo Morantes",
     avatar: "../assets/carita.jpg",
     fecha: "2018-7-25",
     review: "Los libros están en muy buenas condiciones, me gustaron, de muy buena calidad"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 232
    },
@@ -304,14 +291,13 @@ productos = [
     vendedor: {
     nombre: "Aylenn Analy",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Jack Dassaev",
     avatar: "../assets/carita.jpg",
     fecha: "2018-30-12",
     review: "Me gusto el misterio, la historia y los personajes. Gran producto de gran calidad"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 43
    },
@@ -322,14 +308,13 @@ productos = [
     vendedor: {
     nombre: "Beto H.",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews: 
     {
     username: "Alexis Sandoval ",
     avatar: "../assets/carita.jpg",
     fecha: "2018-8-6",
     review: "Me ha gustado y me ha mantenido pegado a él desde que lo inicié a leer."
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 483
    },
@@ -340,14 +325,13 @@ productos = [
     vendedor: {
     nombre: "María Teresa Elorza.",
     valoracion: [1, 2, 3, 4, 5]},
-    reviews: [
+    reviews: 
     {
     username: "Verónica Burquez ",
     avatar: "../assets/carita.jpg",
     fecha: "2018-1-9",
     review: "Me encantó el libro, era un regalo pero ahora me lo quedaré yo"
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles: 496
    },
@@ -358,14 +342,13 @@ productos = [
     vendedor: {
     nombre: "Raul Juarez",
     valoracion: [1, 2, 3, 4]},
-    reviews: [
+    reviews:
     {
     username: "Mariela",
     avatar: "../assets/carita.jpg",
     fecha: "2018-16-7",
     review: "Este libro es increíble. Súper bien escrito, donde la historia te atrapa y es difícil soltarlo."
-    }
-    ],
+    },
     fecha: "2018-10-2",
     disponibles:  242
    }
@@ -377,6 +360,10 @@ productos = [
   clickInfo(p)
   {
     this.navCtrl.push(this.info,{producto:p});
+  }
+  clickCarrito(p)
+  {
+  this.navCtrl.push(this.carrito,{carrito:p});
   }
 }
 
