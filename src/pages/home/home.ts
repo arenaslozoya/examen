@@ -43,7 +43,7 @@ contra;
 
     if (index >= 0) {
 
-      this.navCtrl.push(this.principal);
+      this.navCtrl.push(this.principal, {carrito: this.usuarios[index].carrito});
       }
       
     

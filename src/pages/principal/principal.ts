@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InfoPage } from '../info/info';
 import { CarritoPage } from '../carrito/carrito';
 
@@ -9,7 +9,7 @@ import { CarritoPage } from '../carrito/carrito';
 })
 export class PrincipalPage {
 info = InfoPage;
-carrito = CarritoPage;
+carritoP = CarritoPage;
 productos = [
    {
     nombre: "La razón de estar contigo",
@@ -354,16 +354,18 @@ productos = [
    }
   ];
 
-  constructor(public navCtrl: NavController) {
+  carrito = [];
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.carrito = this.navParams.get('carrito');
   }
   clickInfo(p)
   {
     this.navCtrl.push(this.info,{producto:p});
   }
-  clickCarrito(p)
+  clickCarrito()
   {
-  this.navCtrl.push(this.carrito,{carrito:p});
+    this.navCtrl.push(this.carritoP,{carrito: this.carrito});
   }
 }
 

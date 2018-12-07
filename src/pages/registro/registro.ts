@@ -38,7 +38,8 @@ constructor(public navCtrl: NavController, public navParams: NavParams,public al
       correo: this.correo,
       contra: this.contra,
       tel: this.tel,
-      nombre: this.nombre
+      nombre: this.nombre,
+      carrito: []
     });
     }
     else{

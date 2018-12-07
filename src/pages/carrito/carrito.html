@@ -13,6 +13,18 @@
 </ion-header>
 
 
-<ion-content padding style = "background-color: #D1CF6E">
+<ion-content padding style = "background-color:#A998D1 ">
+  <ion-list style = "background-color: #D16E8C">
+      <ion-list-header>
+          Tu Carrito 
+        </ion-list-header>
+    <ion-item *ngFor= "let p of carrito" style = "background-color: #D16E8C">
+      <ion-avatar item-start>
+        <img [src]= p.foto>
+      </ion-avatar>
+      <h2 (click)= "clickInfo(p)">{{p.nombre}}</h2> 
+      <h2>${{p.precio}}</h2> 
+    </ion-item>
+    </ion-list>
 
 </ion-content>
