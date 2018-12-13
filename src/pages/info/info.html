@@ -13,13 +13,30 @@
 </ion-header>
 
 
-<ion-content padding style = "background-color: #1C43AF">
-  <img [src]= producto.foto>
-  <h4>Vendedor: {{producto.vendedor.nombre}} </h4>
-  <ion-icon name = "star" *ngFor= "let s of producto.vendedor.valoracion"></ion-icon>
+<ion-content padding style = "background-color: #D0B17A">
+  
+  <ion-card style = "background-color: #FFFF">
+  <ion-card-content>
+      <img [src]= producto.foto>
+  </ion-card-content>
+  </ion-card>
+
+          <ion-item>
+              <ion-avatar item-start>
+        <img [src]= producto.reviews.avatar>
+        </ion-avatar>
+          <h4>Vendedor: {{producto.vendedor.nombre}} </h4>
+          <ion-icon name = "star" *ngFor= "let s of producto.vendedor.valoracion"></ion-icon>
+      </ion-item>
+
+<ion-item>
   <h6> Fecha de lanzamiento {{producto.fecha}}</h6>
+</ion-item>
+
+<ion-item>
   <h6>Disponibilidad: {{producto.disponibles}}</h6>
-  <ion-card style = "background-color: #FFB400">
+</ion-item>
+  <ion-card style = "background-color: #F5C396">
     <ion-item>
       <ion-avatar item-start>
         <img [src]= producto.reviews.avatar>
