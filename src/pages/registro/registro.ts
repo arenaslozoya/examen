@@ -17,10 +17,10 @@ import { Storage } from '@ionic/storage';
 })
 export class RegistroPage {
 usuarios =[];
-correo;
-contra;
-nombre;
-tel;
+contra = '';
+nombre = '';
+tel = '';
+correo = ''; 
 
 constructor(public navCtrl: NavController, public navParams: NavParams,public alert: AlertController, public storage: Storage) {
   this.usuarios = this.navParams.get('usuarios');
