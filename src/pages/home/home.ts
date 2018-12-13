@@ -26,9 +26,12 @@ contra;
         if(keys.some(k => k == 'usuarios')){
         this.storage.get('usuarios')
         .then(usuarios =>{
+          console.log(usuarios);
           this.usuarios= JSON.parse(usuarios);})
      }
   });
+  //this.storage.clear()
+
   }
   clickRegistro()
   {

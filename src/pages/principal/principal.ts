@@ -361,7 +361,7 @@ productos = [
   }
   clickInfo(p)
   {
-    this.navCtrl.push(this.info,{producto:p});
+    this.navCtrl.push(this.info,{producto:p , carrito: this.carrito});
   }
   clickCarrito()
   {

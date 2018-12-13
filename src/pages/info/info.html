@@ -13,13 +13,13 @@
 </ion-header>
 
 
-<ion-content padding style = "background-color: #A998D1">
+<ion-content padding style = "background-color: #1C43AF">
   <img [src]= producto.foto>
   <h4>Vendedor: {{producto.vendedor.nombre}} </h4>
   <ion-icon name = "star" *ngFor= "let s of producto.vendedor.valoracion"></ion-icon>
   <h6> Fecha de lanzamiento {{producto.fecha}}</h6>
   <h6>Disponibilidad: {{producto.disponibles}}</h6>
-  <ion-card style = "background-color: #885E72">
+  <ion-card style = "background-color: #FFB400">
     <ion-item>
       <ion-avatar item-start>
         <img [src]= producto.reviews.avatar>
@@ -33,5 +33,5 @@
   </ion-card-content>
   
   </ion-card>
-  <button ion-button (click) = "clickAgregarCarrito(p)" style = "background-color: #D1CF6E">Agregar a Carrito</button>
+  <button ion-button (click) = "clickAgregarCarrito(p)" style = "color:black ; background-color: #F7FFF6">Agregar a Carrito</button>
 </ion-content>
