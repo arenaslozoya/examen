@@ -132,7 +132,7 @@ productos = [
     disponibles: 687
    },
    {
-    nombre: "Flight or Fight",
+    nombre: "Flight or Fright",
     precio: 421.00,
     foto: "../assets/FOF.jpg",
     vendedor: {
